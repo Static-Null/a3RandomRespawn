@@ -1,0 +1,117 @@
+version=53;
+center[]={3119.144,17.756922,11748.882};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			angles[]={6.2538638,0,6.1980653};
+		};
+		name="randomRespawn";
+		init="call{if (isNil ""randomRespawnList"") then {" \n "    missionNamespace setVariable [""randomRespawnList"", []];};" \n "_resList = (missionNamespace getVariable ""randomRespawnList"");" \n "_resList pushBack this;}";
+		id=19;
+		type="ModuleRespawnPosition_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleRespawnPosition_F_Marker";
+				expression="_this setVariable ['Marker',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="0";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleRespawnPosition_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleRespawnPosition_F_Side";
+				expression="_this setVariable ['Side',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="1";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleRespawnPosition_F_ShowNotification";
+				expression="_this setVariable ['ShowNotification',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="1";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleRespawnPosition_F_Type";
+				expression="_this setVariable ['Type',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="0";
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+};
