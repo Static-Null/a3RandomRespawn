@@ -1,5 +1,5 @@
 _plr = _this select 0;
-_freezeTime = 3;
+_freezeTime = 1;
 _plr hideObject true;
 _plr switchCamera "External";
 _plr enableSimulation false;
